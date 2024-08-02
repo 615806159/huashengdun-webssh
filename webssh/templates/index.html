@@ -44,7 +44,7 @@
         <div class="row">
           <div class="col">
             <label for="Hostname">IP或者域名</label>
-            <input class="form-control" type="text" id="hostname" name="hostname" value="" required>
+            <input class="form-control" type="text" id="hostname" placeholder="写你的ip" name="hostname" value="" required>
           </div>
           <div class="col">
             <label for="Port">端口</label>
@@ -54,11 +54,11 @@
         <div class="row">
           <div class="col">
             <label for="Username">用户名</label>
-            <input class="form-control" type="text" id="username" name="username" value="" required>
+            <input class="form-control" type="text" id="username" name="username" placeholder="这里一般写rot"  value="" required>
           </div>
           <div class="col">
             <label for="Password">密码</label>
-            <input class="form-control" type="password" id="password" name="password" value="">
+            <input class="form-control" type="password" id="password" placeholder="你的密码哎，你不会不知是啥吧" name="password" value="">
           </div>
         </div>
         <div class="row">
@@ -69,12 +69,11 @@
         </div>
           <div class="col">
           </div>
-        </div>
         <input type="hidden" id="term" name="term" value="xterm-256color">
         {% module xsrf_form_html() %}
-        <button type="submit" class="btn btn-primary">Connect</button>
-        <button type="reset" class="btn btn-danger">Reset</button>
-        <button type="button" class="btn btn-info" id="sshlinkBtn">SSH Link</button>
+        <button type="submit" class="btn btn-primary"链接SSH</button>
+        <button type="reset" class="btn btn-danger">重新链接</button>
+        <button type="button" class="btn btn-info" id="sshlinkBtn">保存ssh链接</button>
         <div id="sshlink"></div>
         <div>官网: <a href="https://port.nomao.top">由虚妄猫IDC提供</a></div>
       </form>
